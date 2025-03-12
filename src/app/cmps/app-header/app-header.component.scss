@@ -1,29 +1,30 @@
 header {
   height: 4rem;
-  
+
   gap: 1rem;
-  
+
   h1 {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
-  
+
   button {
+    font-size: 1.25rem;
     border-radius: 50%;
-      width: 2rem;
-    }
+    width: 2rem;
+  }
 }
 
 @media (width > 600px) {
-    header {
-        position: relative;
+  header {
+    position: relative;
 
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        button {
-            position: absolute;
-            inset: 1rem 4rem auto auto;
-        }
+    h1 {
+      font-size: 1.5rem;
     }
+
+    button {
+      position: absolute;
+      inset: 1rem 4rem auto auto;
+    }
+  }
 }

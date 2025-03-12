@@ -1,4 +1,6 @@
 <header class="flex center">
   <h1>Number Guesser</h1>
-  <button title="instructions">?</button>
+  <button title="instructions" (click)="toggleModal()">?</button>
+
+  <instructions-modal *ngIf="isInstructionsModal" (close)="toggleModal()" />
 </header>
