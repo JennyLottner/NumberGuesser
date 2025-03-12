@@ -1,1 +1,27 @@
-<p>instructions-modal works!</p>
+<div class="overlay" (click)="closeModal()"></div>
+
+<div class="modal flex column">
+    <button class="close-btn" (click)="closeModal()">𐌗</button>
+
+    <article>
+        <h2>Instructions</h2>
+        <p>Welcome to <span>Number Guesser</span>!</p>
+        <p>The goal of this game is simple: think of a number between 0 and 100, and the Number Guesser will try to guess it. Here’s how it works:</p>
+        <ol>
+            <li>The Number Guesser will begin by guessing the middle number in the range (50).</li>
+            <li>You must then tell it whether the number is <span>higher</span>, <span>lower</span>, or <span>correct</span>.</li>
+            <li>Based on your response, the Number Guesser will adjust the range and guess the next middle number, repeating this process until it guesses correctly.</li>
+        </ol>
+    </article>
+    
+    <article>
+        <h2>How does this work?</h2>
+        <p>This process is based on a concept called <span>binary search</span>, where the range of possible numbers is continually halved with each guess. By the time it makes 7 guesses, it will have narrowed down the range enough to find the correct number!</p>
+    </article>
+
+    <article>
+        <h2>Why 7 Guesses?</h2>
+        <p>The binary search method allows the Number Guesser to narrow down a range of numbers quickly. With each guess, the search range is divided in half, and it takes at most 7 guesses to guess the correct number in the range from 0 to 100. This is because:</p>
+        <p>2^7 = 128, which is just over 100, so 7 guesses are enough to cover all possibilities!</p>
+    </article>
+</div>
