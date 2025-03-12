@@ -21,11 +21,19 @@ button {
     align-items: center;
     
     cursor: pointer;
+
+    &:hover {
+            scale: 1.1;
+    }
 }
 
 a {
     text-decoration: none;
     color: unset;
+
+    &:hover {
+        scale: 1.1;
+}
 }
 
 ul {
