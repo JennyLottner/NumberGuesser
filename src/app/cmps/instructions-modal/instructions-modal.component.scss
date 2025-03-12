@@ -1,0 +1,52 @@
+.overlay {
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal {
+    position: fixed;
+    inset: 2.5rem 0 0 0;
+    z-index: 2;
+
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 16px 16px 0 0;
+
+    gap: 1rem;
+
+    .close-btn {
+        position: absolute;
+        inset: 1rem 1rem auto auto;
+        width: 2rem;
+        background-color: transparent;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        margin-block: 0.2rem;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+    
+    li {
+        padding-block-start: 0.15rem;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+@media (width > 600px) {
+    .modal {
+        margin: 0 auto 2.5rem;
+        max-width: 48.75rem;
+
+        border-radius: 16px;
+    }
+}
